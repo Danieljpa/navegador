@@ -1,0 +1,174 @@
+
+
+.conteiner
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+}
+
+header
+{
+    
+    width: 100%;
+    height: 85px;
+    background-color: #fff;
+    display: flex;
+    border-bottom: 1px solid #D5D5D5;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0px;
+
+}
+
+.logo
+{
+    display: flex;
+    position: fixed;
+    left: 45px;
+    align-items: center;
+    font-size: 14px;
+    gap: 4px;
+}
+
+.logo span
+{
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.theme
+{
+    position: fixed;
+    right: 45px;
+}
+
+#btndark
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 15px;
+    border: 1px solid #D8D8D8;
+    width: 65px;
+    height: 32px;
+    
+}
+
+#btndark svg 
+{
+    width: 18px;
+}
+
+.light
+{
+    background-color: #D1425C;
+    border-radius: 50%;
+    border: 3px solid #D1425C;
+    fill: #fff;
+    
+}
+
+.inputbuscar
+{
+    background-image: url("svg/search.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    display: flex;
+    padding-left: 40px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #DADADA;
+    border-radius: 30px;
+    align-items: center;
+    position: fixed;
+}
+
+#inputt
+{
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+
+}
+
+#contenido
+{
+    
+    padding: 0px;
+}
+
+li
+{
+    width: 540px;
+    border-radius: 12px;
+    border: 1px solid #DDDDDD;
+    padding: 15px 45px;
+    list-style: none;
+    text-align: left;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+li button
+{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+p
+{
+    color: #4D4D4D;
+}
+
+.darkmode
+{
+    background-color: #202124;
+    color: #E1E1E2;
+}
+
+.darkmode .light
+{
+    background-color: #fff;
+    border: 3px solid #fff;
+    fill: #000000;
+}
+
+.darkmode .dark
+{
+    background-color: #D1425C;
+    border-radius: 50%;
+    border: 4px solid #D1425C;
+    fill: #fff;
+}
+
+.darkmode header
+{
+    background-color: #202124;
+}
+.darkmode .inputbuscar
+{
+    background-color: #3C4043;
+}
+
+.darkmode .inputbuscar ::placeholder
+{
+    color: #E1E1E2;
+}
+
+.darkmode p
+{
+    color: #ACADAE;
+}
