@@ -13,13 +13,14 @@ function traerpost()
 
 function mostrarpost(datos)
 {
+    
     data = datos;
     contenido.innerHTML="";
     for( let valor of datos)
     {
-        contenido.innerHTML += `<li><div><h1>${valor.title}</h1><button><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3l7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path></svg></button></div><p>${valor.body}</p></li>`;
+        contenido.innerHTML += `<li><div><h1>${valor.title}</h1><button name="save" ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3l7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path></svg></button></div><p>${valor.body}</p></li>`;
     }
-}
+}   
 
 traerpost();
 
@@ -29,9 +30,10 @@ inputt.addEventListener("keyup", function()
     contenido.innerHTML = "";
     for( let valor of ndatos)
     {
-        contenido.innerHTML += `<li><h1>${valor.title}</h1><p>${valor.body}</p><button>save</button></li>`;
+        contenido.innerHTML += `<li><div><h1>${valor.title}</h1><button><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3l7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path></svg></button></div><p>${valor.body}</p></li>`;
     }
-})
+    
+});
 
 let btndark = document.querySelector("#btndark");
 const body = document.querySelector("body");

@@ -6,8 +6,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 90px;
-    font-family: 'Roboto Mono', monospace;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
     height: 100%;
 }
 
@@ -38,14 +37,14 @@ header
 
 .logo span
 {
-    font-weight: 900;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .theme
 {
     position: fixed;
-    right: 45px;
+    right: 90px;
 }
 
 #btndark
@@ -58,11 +57,13 @@ header
     border: 1px solid #D8D8D8;
     width: 65px;
     height: 32px;
+    background-color: transparent;
     
 }
 
 #btndark svg 
 {
+    display: flex;
     width: 18px;
 }
 
@@ -77,20 +78,24 @@ header
 
 .inputbuscar
 {
-    background-image: url("svg/search.svg");
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: 20px center;
     display: flex;
-    padding-left: 40px;
+    padding-left: 15px;
     margin-top: 12px;
     margin-bottom: 12px;
+    margin-left: 38px;
     width: 500px;
     height: 40px;
     border: 1px solid #DADADA;
     border-radius: 30px;
     align-items: center;
     position: fixed;
+    box-sizing: border-box;
+}
+
+.inputbuscar svg
+{
+    width: 24px;
+    height: 24px;
 }
 
 #inputt
@@ -103,15 +108,40 @@ header
 
 }
 
+.contador
+{
+    display: flex;
+    align-items: center;
+    height: 27px;
+    position: fixed;
+    right: 10px;
+    border: 1px solid #D8D8D8;
+    border-radius: 25%;
+    padding: 2px 8px;
+    gap: 3px;
+}
+
+.contador svg
+{
+    width: 20px;
+    height: 20px;
+}
+
+.contador #nsave
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
 li
 {
-    width: 540px;
+    width: 500px;
     border-radius: 12px;
     border: 1px solid #DDDDDD;
-    padding: 10px 0px 20px 56px;
+    padding: 10px 0px 20px 40px;
     list-style: none;
     text-align: left;
-    margin: 15px;
+    margin: 15px 0px;
     box-sizing: border-box;
 }
 
@@ -124,6 +154,7 @@ li div
 li div h1
 {
     width: 385px;
+    font-size: 20px;
 }
 
 li div button
@@ -139,22 +170,30 @@ li div button
 
 p
 {
+    margin-top: 0px;
     color: #4D4D4D;
     text-align: left;
     width: 350px;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
+.guardado
+{
+    background-color: #D1425C;
+}
 .darkmode
 {
-    background-color: #202124;
+    background-color: #262626;
     color: #E1E1E2;
 }
 
 .darkmode .light
 {
-    background-color: #fff;
-    border: 3px solid #fff;
-    fill: #000000;
+    background-color: transparent;
+    border: 1px solid transparent;
+    fill: white;
+
 }
 
 .darkmode .dark
@@ -167,13 +206,26 @@ p
 
 .darkmode header
 {
-    background-color: #202124;
-    border: 1px solid #625959;
+    background-color: #262626;
+    border: 1px solid #444444;
 }
+
+.darkmode #btndark 
+{
+    background-color: #2f2f2f;
+    border: 1px solid #444444;
+}
+
 .darkmode .inputbuscar
 {
-    background-color: #3C4043;
-    border: 1px solid #625959;
+    background-color: #2f2f2f;
+    border: 1px solid #444444;
+}
+
+.darkmode #inputt 
+{
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 .darkmode .inputbuscar ::placeholder
@@ -181,14 +233,27 @@ p
     color: #979292;
 }
 
+.darkmode .contador
+{
+    background-color: #2f2f2f;
+    border-color: #444444;
+}
+
+.darkmode .contador svg
+{
+    fill: #d7cdcd;
+}
+
 .darkmode li 
 {
-    border: 1px solid #625959;
+    border: 1px solid #444444;
+    background-color: #2f2f2f;
 } 
 
 .darkmode li div button
 {
-    border: 1px solid #625959;
+    border: 1px solid #444444;
+    background-color: #262626;
 }
 
 .darkmode li div button svg
